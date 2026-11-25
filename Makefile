@@ -1,13 +1,13 @@
 .PHONY: lint check health validate deps
 
 lint:       ## Run luacheck on all Lua files
-	luacheck lua/
+	luacheck config/nvim/lua/
 
 check:      ## Check Neovim config loads without errors
-	XDG_CONFIG_HOME=$(HOME)/.config/nvim-dev nvim --headless -c "q"
+	XDG_CONFIG_HOME=$(CURDIR)/config nvim --headless -c "q"
 
 health:    ## Run :checkhealth internally
-	XDG_CONFIG_HOME=$(HOME)/.config/nvim-dev nvim --headless -c "checkhealth" -c "q"
+	XDG_CONFIG_HOME=$(CURDIR)/config nvim --headless -c "checkhealth" -c "q"
 
 validate:   ## Full validation suite
 	$(MAKE) lint

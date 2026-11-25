@@ -75,7 +75,7 @@
 ## 2. Project Structure
 
 ```
-~/.config/nvim-dev/
+config/nvim/
 ├── init.lua                  # Entry point (8 lines)
 ├── README.md                 # Project overview
 ├── docs/                     # Documentation

@@ -17,7 +17,7 @@ curl -fsSL https://raw.githubusercontent.com/my-perfect-system/mps-terminal-nvim
 ```
 
 All methods deploy `config/nvim/` to the current user's `~/.config/nvim`; one clone
-per host (`${MPS_REPO_DIR:-/srv/repo/github/my-perfect-system}`), shared by all
+per host (`${MPS_REPO_DIR:-/srv/repo/github/my-perfect-system/mps}`), shared by all
 users. Plugins install on first start (`nvim +Lazy! sync`).
 
 ## Usage
